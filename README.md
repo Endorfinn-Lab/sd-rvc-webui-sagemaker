@@ -1,3 +1,1 @@
-==========================
-### sd-rvc-webui-sagemaker
-==========================
+SD-RVC Webui for Sagemaker Jupyter Notebook
