@@ -6,7 +6,7 @@ def download_file(url, output_dir=".", api_key=None):
 
     headers = {}
     if api_key:
-        headers['Authorization'] = f'Bearer {api-key}'
+        headers['Authorization'] = f'Bearer {api_key}'
 
     try:
         response = requests.get(url, stream=True, headers=headers)
