@@ -2,8 +2,8 @@ import gdown
 import os
 
 file_id = input("File ID: ")
-destination = input("Destination Folder (leave blank for current folder): ")
 filename = input("File Name (with extension): ")
+destination = input("Destination Folder (leave blank for current folder): ")
 
 if not destination:
   destination = "."
