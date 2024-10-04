@@ -2,13 +2,13 @@ import gdown
 import os
 
 file_id = input("File ID: ")
-filename = None
-destination = input("Destination Folde(Leave blank for current folder): ")
+destination = input("Destination Folder (leave blank for current folder): ")
+filename = input("File Name (with extension): ")
 
 if not destination:
   destination = "."
 
-filename = os.path.join(destination, file_id)
+output = os.path.join(destination, filename)
 
-gdown.download(id=file_id, output=filename, quiet=False)
+gdown.download(id=file_id, output=output, quiet=False)
 print(f"Downloaded file {filename}")
